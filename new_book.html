@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Bootstrap Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <header class="bg-dark p-3 d-flex justify-content-between">
+        <img class="logo" src="./img/duck.png" alt="Duck logo">
+            <nav class="navbar navbar-expand-lg bg-dark d-none d-lg-block flex-grow-1">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active text-light" aria-current="page" href="./index.html">Catalogo Libri</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Anagrafica Utenti</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link text-secondary" href="#">Storico Prestiti</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled text-secondary" aria-disabled="true">Help</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+            <nav class="navbar d-none d-lg-block">
+                <div class="container-fluid bg-dark">
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success text-light border-light" type="submit">Search</button>
+                </form>
+                </div>
+            </nav>
+        </div>
+        <div class="collapse" id="navbarToggleExternalContent" data-bs-theme="dark">
+          </div>
+          <nav class="navbar navbar-dark bg-dark d-lg-none">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+            </div>
+          </nav>
+    </header>
+    <main>
+        <section class="container py-4">
+            <div class="row">
+                <div class="col">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h3>Nuovo Libro</h3>
+                    </div>
+                    <form class="row g-3">
+                        <div class="col col-md-6">
+                            <label for="inputNomeAutore4" class="form-label">Nome Autore</label>
+                            <input type="text" class="form-control" placeholder="Inserisci il nome dell'autore" aria-label="First name">
+                        </div>
+                        <div class="col col-md-6">
+                            <label for="inputCognomeAutore4" class="form-label">Cognome Autore</label>
+                            <input type="text" class="form-control" placeholder="Inserisci il cognome dell'autore" aria-label="Last name">
+                        </div>
+                        <div class="col-12">
+                          <label for="inputEmail4" class="form-label">Titolo</label>
+                          <input type="email" class="form-control" placeholder="Inserisci il titolo del libro" id="inputEmail4">
+                          <h6 class="text-secondary">Titolo versione italiana</h6>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                          <label for="inputPassword4" class="form-label">Genere</label>
+                          <select id="inputState" class="form-select">
+                            <option selected>Scegli il genere</option>
+                            <option>Giallo</option>
+                            <option>Romanzo</option>
+                            <option>Azione</option>
+                            <option>Avventura</option>
+                          </select>
+                        </div>
+                        <div class="col-12 col-lg-4">
+                          <label for="inputAddress" class="form-label">Anno di pubblicazione</label>
+                          <input type="text" class="form-control" id="inputAddress" placeholder="Inserisci l'anno">
+                        </div>
+                        <div class="col-12 col-lg-4">
+                          <label for="inputAddress2" class="form-label">ISBN#</label>
+                          <input type="text" class="form-control" id="inputAddress2" placeholder="Inserisci il codice ISBN#">
+                        </div>
+                        <hr class="mt-5">
+                        <div class="col-md-6">
+                          <label for="inputCity" class="form-label">Note</label>
+                          <input type="text-area" class="form-control" placeholder="Inserisci eventuali note sul libro" id="inputCity">
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check form-switch mt-2">
+                                <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                                <label class="form-check-label" for="flexSwitchCheckDefault">Disponibile anche in digitale</label>
+                              </div>
+                        </div>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-primary mt-4">Aggiungi Libro</button>
+                        </div>
+                      </form>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
